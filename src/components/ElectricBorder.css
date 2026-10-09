@@ -1,0 +1,11 @@
+.electric-border { position: relative; width: 100%; height: 100%; border-radius: inherit; isolation: isolate; overflow: visible; }
+.eb-canvas-container { position: absolute; z-index: 3; top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none; }
+.eb-canvas { display: block; }
+.eb-content { position: relative; z-index: 1; width: 100%; height: 100%; border-radius: inherit; }
+.eb-glow { position: absolute; z-index: 0; inset: 0; border: 1px solid color-mix(in srgb,var(--electric-border-color) 48%,transparent); border-radius: inherit; pointer-events: none; }
+.eb-glow-soft { filter: blur(4px); opacity: .54; }
+.eb-glow-sharp { filter: blur(1px); opacity: .72; }
+
+@media (prefers-reduced-motion: reduce) {
+  .eb-canvas-container { display: none; }
+}

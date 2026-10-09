@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.vite/
+
+# Local originals are kept outside the production asset set.
+original-assets/
+
+# Secrets and local environment configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local tooling and operating-system files.
+.DS_Store
+Thumbs.db
+.idea/
